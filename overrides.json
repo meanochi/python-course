@@ -1,0 +1,20 @@
+{
+  "@jupyterlab/apputils-extension:themes": {
+    "theme": "JupyterLab Dark"
+  },
+  "@jupyterlab/mainmenu-extension:plugin": {
+    "menus": [
+      {
+        "id": "jp-mainmenu-file",
+        "disabled": true
+      },
+      {
+        "id": "jp-mainmenu-view",
+        "disabled": true
+      }
+    ]
+  },
+    "@jupyterlab/translation-extension:plugin": {
+    "locale": "he_IL"
+    }
+}
