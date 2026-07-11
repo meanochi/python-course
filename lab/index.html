@@ -188,24 +188,29 @@
       }
 
     </style>
-    <style>
-  /* כופה על כל תאי הטקסט והמרקדאון להיות מימין לשמאל */
+<style>
+  /* היישור לעברית שעשינו קודם */
   .jp-MarkdownOutput, .jp-RenderedHTMLCommon {
     direction: rtl !important;
     text-align: right !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
   }
+
+  /* --- הוספה חדשה: הגדלת כפתורי המערכת --- */
+  /* הגדלת הכפתורים עצמם (Play, הוספת תא וכו') */
+  .jp-ToolbarButtonComponent {
+    transform: scale(1.4) !important; /* מגדיל את הכפתור ב-40% */
+    margin: 0 12px !important; /* מרחיק את הכפתורים אחד מהשני */
+  }
+  
+  /* התאמת הגובה של סרגל הכלים כדי שהכפתורים לא ייחתכו */
+  .jp-Toolbar {
+    min-height: 55px !important;
+    padding: 5px 0 !important;
+  }
 </style>
   </head>
   <body class="jp-ThemedContainer" data-notebook="lab">
-            <div style="position: fixed; top: 15px; left: 15px; z-index: 99999; display: flex; gap: 10px;">
-  <a href="https://classroom.google.com/" target="_blank" style="background-color: #109d59; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-family: Arial, sans-serif; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.3); transition: 0.2s;">
-    🎓 Classroom
-  </a>
-  <a href="https://drive.google.com/drive/u/0/my-drive" target="_blank" style="background-color: #4285f4; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-family: Arial, sans-serif; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.3); transition: 0.2s;">
-    📁 Google Drive
-  </a>
-</div>
     <div id="jupyterlite-loading-indicator" class="hidden">
       <div id="jupyterlite-galaxy">
         <div id="jupyterlite-main-logo">
